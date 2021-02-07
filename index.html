@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoApp</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="todo_list">
+             <h1>Tasks TODO</h1>
+            <div class="create_new_todo">
+                <input type="text" class="message" placeholder="Task to do">
+                <p class="p1">Fill this field</p>
+                <input type="text" class="priority" placeholder="Priority from 1 to 3">
+                <p class="p2">Fill this field</p>
+                <p class="p3">Fill this field using "1", "2" or "3"</p>
+                <div class="settings">About priority:
+                    <ul>
+                        <li><div class="sq1"></div><span> - 1st priority</span></li>
+                        <li><div class= "sq2"></div><span> - 2nd priority</span></li>
+                        <li><div class="sq3"></div><span>  - 3rd priority</span></li>
+                    </ul>
+                </div>
+                <button class="add">Add</button>
+                <div class="filter">Filter by priority:
+                    <ul>
+                        <li><input type="radio" name="priority" value="prior1" id="radio">1st priority</li>
+                        <li><input type="radio" name="priority" value="prior2" id="radio">2nd priority</li>
+                        <li><input type="radio" name="priority" value="prior3" id="radio">3rd priority</li>
+                        <li><input type="radio" name="priority" value="all" id="radio">All of tasks</li>
+                        <li><input type="button" id="radiofilter" value="Filter"></li>
+                    
+                    </ul>
+                    <div class="comment">To delete use RBM(Right Button Mouse)</div>
+                </div>
+            </div>
+     
+            <div class="wrapper">
+                <ul class="todo"></ul>
+            </div>
+     
+        </div>
+     
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
