@@ -41,6 +41,7 @@ addTask.addEventListener('click', function(){                             // Ð•Ñ
                 priority: priority.value
             };
             todoList.push(newTODO);
+            console.log(todoList)
             let comment = document.querySelector('.comment');
             comment.style.display = 'block'
             setTimeout(() =>{
