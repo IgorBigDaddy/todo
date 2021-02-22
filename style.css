@@ -9,6 +9,9 @@ li{
 .submit{
   float: right;
 }
+.message:hover{
+  cursor: pointer;
+}
 .sq1{
     width: 10px;
     height: 10px;
@@ -84,6 +87,7 @@ input[type=text] {
   padding: 10px; }
 .priority{
     margin-top: 10px;
+    cursor: pointer;
 }
 .priority1{
     font-weight: bold;
@@ -99,6 +103,9 @@ button {
   width: 90%;
   padding: 10px;
   cursor: pointer; }
+#radiofilter{
+  cursor: pointer;
+}
 
 .todo {
   padding-left: 0; }
@@ -107,6 +114,10 @@ button {
     list-style-type: none; }
     .todo li:not(:last-child) {
       border-bottom: 1px solid #000; }
+
+input[type=radio]{
+  cursor: pointer;
+}
 
 input[type=checkbox] {
   opacity: 0;
