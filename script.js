@@ -9,9 +9,7 @@ if (localStorage.getItem('todo')) {
   todoList = JSON.parse(localStorage.getItem('todo'));
   displayTasks();
 }
-
-addTask.addEventListener('click', function () {
-  // Если поля не заполнены
+function add() {
   let error1 = document.querySelector('.p1');
   let error2 = document.querySelector('.p2');
   let error3 = document.querySelector('.p3');
@@ -48,6 +46,22 @@ addTask.addEventListener('click', function () {
   } else {
     error3.style.display = 'block';
   }
+}
+taskTodo.addEventListener('keypress', (e) => {
+  if (e.keyCode == 13) {
+    add();
+  }
+});
+priority.addEventListener('keypress', (e) => {
+  if (e.keyCode == 13) {
+    add();
+  }
+});
+
+addTask.addEventListener('click', function () {
+  // Если поля не заполнены
+
+  add();
 });
 
 function displayTasks() {
